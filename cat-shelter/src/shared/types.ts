@@ -11,7 +11,7 @@ export interface BenefitType {
   description: string;
 }
 
-export interface ClassType {
+export interface CatType {
   name: string;
   description?: string;
   image: string;
