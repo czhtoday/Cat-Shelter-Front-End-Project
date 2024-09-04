@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Cat Shelter Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for the Cat Shelter website, a platform dedicated to helping potential cat adopters find their perfect companions. The website is developed using React, TypeScript, and styled with Tailwind CSS. It is built and optimized using Vite.
 
-Currently, two official plugins are available:
+## Author
+Zhihang Cheng
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology Stack
 
-## Expanding the ESLint configuration
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **Vite**: A modern frontend build tool that provides a faster and more efficient development experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Local Development
 
-- Configure the top-level `parserOptions` property like this:
+Follow these steps to set up and run the project locally:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+
+- Node.js (v14 or newer)
+- npm
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/cat-shelter.git
+cd cat-shelter
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Running the project
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To start the development server, run:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+This will start the local server on http://localhost:5173, and you can open this URL in a browser to view the application.
+
+
+
+
+
+
