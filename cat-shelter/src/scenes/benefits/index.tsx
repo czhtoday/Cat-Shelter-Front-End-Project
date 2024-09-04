@@ -70,10 +70,13 @@ const Benefits = ({ setSelectedPage }: Props) => {
 
         {/* BENEFITS */}
         <motion.div
+          // If it's a mobile screen, arrange elements vertically. (mt-5 gap-8)
+          // Else, it will follow flexbox rulls. (all settings applied)
           className="mt-5 items-center justify-between gap-8 md:flex"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
+          // define the properties of 'initial' and 'whileInview' 
           variants={container}
         >
           {benefits.map((benefit: BenefitType) => (

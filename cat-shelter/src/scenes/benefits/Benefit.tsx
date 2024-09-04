@@ -14,6 +14,8 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
+// Create a UI for each benefit card and added an interaction button
+
 const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
   return (
     <motion.div

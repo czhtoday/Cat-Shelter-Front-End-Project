@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 import Home from "@/scenes/home";
 import Benefits from "@/scenes/benefits";
+import OurCats from "@/scenes/ourCats";
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = () => {  
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
         setSelectedPage(SelectedPage.Home);
@@ -34,6 +35,8 @@ function App() {
       />
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <OurCats setSelectedPage={setSelectedPage} />
+      
       
     </div>
   )
