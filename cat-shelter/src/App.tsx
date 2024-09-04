@@ -5,6 +5,7 @@ import Home from "@/scenes/home";
 import Benefits from "@/scenes/benefits";
 import OurCats from "@/scenes/ourCats";
 import ContactUs from "@/scenes/contactUs";
+import Footer from "@/scenes/footer";
 
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
       <Benefits setSelectedPage={setSelectedPage} />
       <OurCats setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />    
+      <Footer />    
+
     </div>
   )
 }
