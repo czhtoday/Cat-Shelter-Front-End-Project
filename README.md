@@ -2,6 +2,9 @@
 
 This repository contains the source code for the Cat Shelter website, a platform dedicated to helping potential cat adopters find their perfect companions. The website is developed using React, TypeScript, and styled with Tailwind CSS. It is built and optimized using Vite.
 
+# Watch the Demonstration Video
+[![Watch the Video](https://img.youtube.com/vi/UWdoJxSlkME/hqdefault.jpg)](https://youtu.be/UWdoJxSlkME)
+
 ## Author
 Zhihang Cheng
 
